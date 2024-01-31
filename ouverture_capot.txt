@@ -1,0 +1,20 @@
+Proc principal:
+
+ARMx
+STM32F103
+R8T6
+GQ ZC0 93
+CHN GQ 741
+        12
+
+
+Liste des périphériques:
+- 
+
+Autres:
+
+- TM1668 - led drive control
+- LD1117AG - voltage regulator
+  33AQVDV2
+- TM74HC138 - 3x8 demultiplexer
+- CSM 224-S (en double)
