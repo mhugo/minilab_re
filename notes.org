@@ -1,0 +1,8 @@
+* memory map
+0x0: vector table
+= table of 32 bit pointers
+
+0: value of stack pointer at reset
+1: RESET
+
+08000000
