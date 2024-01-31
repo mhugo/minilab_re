@@ -1,0 +1,6 @@
+[submodule "cmsis-svd-data"]
+	path = cmsis-svd-data
+	url = https://github.com/cmsis-svd/cmsis-svd-data.git
+[submodule "cmsis-svd"]
+	path = cmsis-svd
+	url = https://github.com/cmsis-svd/cmsis-svd.git
