@@ -62,15 +62,15 @@ nRST
 
 I then needed to plug a JTAG/SWD probe in the connectors I have just discovered.
 
-I do not have dedicated connectors of this type. So I finally chose to solder jumper wires (a.k.a. Dupont wires) directly onto the board. My soldering skills are quite limited, but this turned out to be ok.
+I do not have dedicated connectors of this type. So I finally chose to solder jumper wires (a.k.a. Dupont wires) directly onto the board. My soldering skills are quite limited, but this turned out to be ok. Next time, I'll buy and try solder flux.
 
-![](img/solder1.png)
+![](img/solder1.jpg)
 
-![](img/solder2.png)
+![](img/solder2.jpg)
 
 I then drilled in hole in the plastic cover of the controller so that I could close the cover and still have the wires available.
 
-![](img/solder_and_hole.png)
+![](img/solder_and_hole.jpg)
 
 
 ### Using a custom probe
@@ -140,7 +140,6 @@ Program stopped.
 
 And in OpenOCD logs:
 ```
-```
 Info : accepting 'gdb' connection on tcp/3333
 Info : device id = 0x20036410
 Info : SWD DPIDR 0x1ba01477
@@ -164,4 +163,7 @@ I also tested that I was able to read other memory regions:
 
 So ... it certainly means the flash memory cannot be read. And it seems this STM32 MCU (as well as lots of others) has a "Readout Protection" mode where the flash memory can be protected against read attempts while in debug mode ...
 
+There [seems to exist an attack](https://www.usenix.org/system/files/woot20-paper-obermaier.pdf) to bypass the readout protection, but there is certainly no gaurantee that it works and would demand an important effort. Moreover, it would only allow dumping the firmware (which is already available through firmware updates), not a debugging session.
+
 The "live debugging" approach is then a failure ... I am back to trying to figure out how things work with Ghidra.
+
