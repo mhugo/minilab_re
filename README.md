@@ -63,6 +63,7 @@ nRST
 I then needed to plug a JTAG/SWD probe in the connectors I have just discovered.
 
 I do not have dedicated connectors of this type. So I finally chose to solder jumper wires (a.k.a. Dupont wires) directly onto the board. My soldering skills are quite limited, but this turned out to be ok. Next time, I'll buy and try solder flux.
+Another, less intrusive alternative would have been [Pogo pins](https://www.adafruit.com/product/5434).
 
 ![](img/solder1.jpg)
 
